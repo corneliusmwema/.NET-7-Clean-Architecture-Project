@@ -2,7 +2,7 @@ namespace FSH.WebApi.Application.Multitenancy;
 
 public class ActivateTenantRequest : IRequest<string>
 {
-    public string TenantId { get; set; } = default!;
+    public string TenantId { get; set; }
 
     public ActivateTenantRequest(string tenantId) => TenantId = tenantId;
 }
