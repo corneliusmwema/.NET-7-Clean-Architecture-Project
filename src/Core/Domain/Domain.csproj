@@ -9,4 +9,7 @@
     <ItemGroup>
       <ProjectReference Include="..\Shared\Shared.csproj" />
     </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="SonarAnalyzer.CSharp" Version="9.11.0.78383" />
+    </ItemGroup>
 </Project>

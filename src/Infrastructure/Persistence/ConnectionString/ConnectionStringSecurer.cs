@@ -1,7 +1,6 @@
-using System.Data.SqlClient;
-using System.Runtime.InteropServices;
 using FSH.WebApi.Application.Common.Persistence;
 using FSH.WebApi.Infrastructure.Common;
+using Microsoft.Data.SqlClient;
 using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Options;
 using MySqlConnector;

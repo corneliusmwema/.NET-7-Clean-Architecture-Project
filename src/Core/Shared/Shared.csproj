@@ -3,4 +3,7 @@
         <RootNamespace>FSH.WebApi.Shared</RootNamespace>
         <AssemblyName>FSH.WebApi.Shared</AssemblyName>
     </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Update="SonarAnalyzer.CSharp" Version="9.11.0.78383" />
+    </ItemGroup>
 </Project>

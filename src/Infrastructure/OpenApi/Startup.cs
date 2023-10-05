@@ -87,7 +87,7 @@ internal static class Startup
                 document.OperationProcessors.Add(new AspNetCoreOperationSecurityScopeProcessor());
                 document.OperationProcessors.Add(new SwaggerGlobalAuthProcessor());
 
-                document.TypeMappers.Add(new PrimitiveTypeMapper(typeof(TimeSpan), schema =>
+                document.SchemaSettings.TypeMappers.Add(new PrimitiveTypeMapper(typeof(TimeSpan), schema =>
                 {
                     schema.Type = NJsonSchema.JsonObjectType.String;
                     schema.IsNullableRaw = true;
@@ -97,10 +97,10 @@ internal static class Startup
 
                 document.OperationProcessors.Add(new SwaggerHeaderAttributeProcessor());
 
-                document.SchemaProcessors.Add(new SwaggerGuidSchemaProcessor());
+                document.SchemaSettings.SchemaProcessors.Add(new SwaggerGuidSchemaProcessor());
 
                 var fluentValidationSchemaProcessor = serviceProvider.CreateScope().ServiceProvider.GetService<FluentValidationSchemaProcessor>();
-                document.SchemaProcessors.Add(fluentValidationSchemaProcessor);
+                document.SchemaSettings.SchemaProcessors.Add(fluentValidationSchemaProcessor);
             });
         }
 
