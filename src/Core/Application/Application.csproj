@@ -1,6 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
         <RootNamespace>FSH.WebApi.Application</RootNamespace>
         <AssemblyName>FSH.WebApi.Application</AssemblyName>
     </PropertyGroup>
