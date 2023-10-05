@@ -21,7 +21,7 @@ indent_size = 2
 [*.cs]
 dotnet_sort_system_directives_first = true:warning
 
-csharp_style_namespace_declarations = file_scoped:warning
+csharp_style_namespace_declarations = file_scoped:error
 
 csharp_style_var_for_built_in_types = false:warning
 
@@ -172,6 +172,7 @@ csharp_style_expression_bodied_lambdas = true:silent
 csharp_style_expression_bodied_local_functions = false:silent
 csharp_style_prefer_primary_constructors = true:suggestion
 dotnet_diagnostic.CA1032.severity = silent
+csharp_space_around_binary_operators = before_and_after
 
 [*.{cs,vb}]
 #### Naming styles ####
@@ -236,3 +237,4 @@ dotnet_style_prefer_conditional_expression_over_return = true:silent
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_diagnostic.CA2007.severity = silent
+dotnet_style_prefer_collection_expression = true:suggestion

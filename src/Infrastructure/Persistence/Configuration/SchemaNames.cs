@@ -2,9 +2,8 @@
 
 internal static class SchemaNames
 {
-    // TODO: figure out how to capitalize these only for Oracle
-    public static string Auditing = nameof(Auditing); // "AUDITING";
-    public static string Catalog = nameof(Catalog); // "CATALOG";
-    public static string Identity = nameof(Identity); // "IDENTITY";
-    public static string MultiTenancy = nameof(MultiTenancy); // "MULTITENANCY";
+    public const string Auditing = nameof(Auditing);
+    public const string Catalog = nameof(Catalog);
+    public const string Identity = nameof(Identity);
+    public const string MultiTenancy = nameof(MultiTenancy);
 }

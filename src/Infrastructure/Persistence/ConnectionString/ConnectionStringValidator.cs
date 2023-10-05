@@ -32,21 +32,19 @@ internal class ConnectionStringValidator : IConnectionStringValidator
             switch (dbProvider?.ToLowerInvariant())
             {
                 case DbProviderKeys.Npgsql:
-                    var postgresqlcs = new NpgsqlConnectionStringBuilder(connectionString);
+                    _ = new NpgsqlConnectionStringBuilder(connectionString);
                     break;
 
                 case DbProviderKeys.MySql:
-                    var mysqlcs = new MySqlConnectionStringBuilder(connectionString);
+                    _ = new MySqlConnectionStringBuilder(connectionString);
                     break;
 
                 case DbProviderKeys.SqlServer:
-                    var mssqlcs = new SqlConnectionStringBuilder(connectionString);
+                    _ = new SqlConnectionStringBuilder(connectionString);
                     break;
 
                 case DbProviderKeys.SqLite:
-                    var sqlite = new SqliteConnection(connectionString);
-                    break;
-                default:
+                    _ = new SqliteConnection(connectionString);
                     break;
             }
 
