@@ -170,6 +170,8 @@ csharp_style_expression_bodied_indexers = true:silent
 csharp_style_expression_bodied_accessors = true:silent
 csharp_style_expression_bodied_lambdas = true:silent
 csharp_style_expression_bodied_local_functions = false:silent
+csharp_style_prefer_primary_constructors = true:suggestion
+dotnet_diagnostic.CA1032.severity = silent
 
 [*.{cs,vb}]
 #### Naming styles ####
@@ -233,3 +235,4 @@ dotnet_style_prefer_conditional_expression_over_assignment = true:silent
 dotnet_style_prefer_conditional_expression_over_return = true:silent
 dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_diagnostic.CA2007.severity = silent
