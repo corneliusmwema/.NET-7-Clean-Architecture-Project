@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Xunit;
 
-namespace Infrastructure.Test;
+namespace Infrastructure.Test.Validation;
 
 public class DatabaseSettingsValidationTests
 {

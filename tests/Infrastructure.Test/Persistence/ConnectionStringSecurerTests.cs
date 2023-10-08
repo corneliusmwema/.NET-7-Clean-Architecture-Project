@@ -1,7 +1,7 @@
 ﻿using FSH.WebApi.Application.Common.Persistence;
 using Xunit;
 
-namespace FSH.WebApi.Infrastructure.Persistence.Tests;
+namespace Infrastructure.Test.Persistence;
 
 public class ConnectionStringSecurerTests
 {

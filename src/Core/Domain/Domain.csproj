@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <RootNamespace>FSH.WebApi.Domain</RootNamespace>
         <AssemblyName>FSH.WebApi.Domain</AssemblyName>
@@ -11,5 +11,9 @@
     </ItemGroup>
     <ItemGroup>
       <PackageReference Update="SonarAnalyzer.CSharp" Version="9.11.0.78383" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Common\Contracts\" />
+      <Folder Include="Common\Events\" />
     </ItemGroup>
 </Project>

@@ -173,6 +173,7 @@ csharp_style_expression_bodied_local_functions = false:silent
 csharp_style_prefer_primary_constructors = true:suggestion
 dotnet_diagnostic.CA1032.severity = silent
 csharp_space_around_binary_operators = before_and_after
+dotnet_diagnostic.IDE0290.severity = warning
 
 [*.{cs,vb}]
 #### Naming styles ####
@@ -238,3 +239,4 @@ dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_diagnostic.CA2007.severity = silent
 dotnet_style_prefer_collection_expression = true:suggestion
+dotnet_diagnostic.CA1034.severity = silent
